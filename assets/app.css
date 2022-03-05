@@ -1,0 +1,226 @@
+@import url("reset.css");
+
+@font-face {
+	font-family: "Work Sans";
+	src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	src: url("../fonts/WorkSans-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url("../fonts/IBMPlexMono-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url("../fonts/IBMPlexMono-Bold.ttf") format("truetype");
+	font-weight: 800;
+}
+
+body {
+	background-color: #efefef;
+}
+
+* {
+	font-family: "Work Sans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: #242424;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ol {
+	counter-reset: item;
+}
+
+li h1:before,
+li h2:before {
+	content: counters(item, ".") ". ";
+	counter-increment: item;
+}
+
+li h3:before {
+	content: counters(item, ".") " ";
+	counter-increment: item;
+}
+
+#wrap {
+	padding: 0 16px;
+	padding-top: 64px;
+	margin-bottom: 32px;
+	max-width: 640px;
+	margin: auto;
+	display: block;
+}
+
+#logo {
+	height: 30px;
+	margin-bottom: 64px;
+}
+
+#hosted {
+	margin: auto;
+    width: 20%;
+    text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 800;
+	letter-spacing: -0.25px;
+	color: #242424;
+	margin-bottom: 16px;
+}
+
+h2,
+h3,
+h4 {
+	margin-bottom: 8px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.25px;
+	color: #242424;
+}
+
+h3 {
+	margin-top: 32px;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: -0.24px;
+	color: #242424;
+}
+
+h4 {
+	font-size: 14px;
+	letter-spacing: normal;
+	line-height: 1.43;
+}
+
+ul {
+	list-style: disc outside none;
+	margin-bottom: 16px;
+}
+
+ul li {
+	font-family: "IBM Plex Mono";
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: #606060;
+	margin-left: 24px;
+}
+
+p {
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+hr {
+	margin: 32px 0;
+	border: 0;
+	border-top: 1px solid #c9c9c9;
+}
+
+h3.confidential {
+	font-family: "IBM Plex Mono";
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+	#wrap {
+		padding: 64px;
+		margin: auto;
+	}
+
+	#logo {
+		height: 30px;
+		margin-bottom: 133px;
+	}
+
+	hr {
+		margin: 64px 0;
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 27px;
+		letter-spacing: normal;
+		color: #242424;
+	}
+
+	li {
+		font-size: 16px;
+	}
+
+	p:last-child,
+	ul,
+	h2 + p {
+		margin-bottom: 32px;
+	}
+
+	ol ul p,
+	ol ol p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	h1 {
+		margin-bottom: 32px;
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	h2,
+	h3,
+	h4 {
+		margin-bottom: 16px;
+	}
+}
